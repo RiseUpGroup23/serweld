@@ -1,0 +1,42 @@
+.sliderImg {
+    height: 100vh;
+    width: 100vw;
+}
+
+.sliderOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background: linear-gradient(180deg, rgba(26, 33, 89, 0.7) 26%, rgba(0, 0, 0, 0.7) 63.5%);
+}
+
+.sliderImg img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.slick-arrow {
+    z-index: 1;
+    opacity: .5;
+    transform: scale(1.5);
+}
+
+.slick-prev {
+    left: 1rem;
+}
+
+.slick-next {
+    right: 1rem;
+}
+
+.logoImg {
+    position: absolute;
+    z-index: 1;
+    inset-area: center;
+    width: min(1240px, 50vw);
+    object-fit: contain;
+}
