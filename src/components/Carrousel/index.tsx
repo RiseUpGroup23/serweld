@@ -8,11 +8,16 @@ export default function Carrousel() {
         arrows: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 5000
     };
     return (
         <div className="logoOverlay">
-            <img className="logoImg" src="/logo192.png" alt="Logo" />
+            <div className="floatInfo">
+                <img className="logoImg" src="/logo192.png" alt="Logo" />
+                <span className="logoText">SOLUCIONES PARA LA INDUSTRIA</span>
+            </div>
             <Slider {...settings}>
                 <div className="sliderImg">
                     <div className="sliderOverlay"></div>

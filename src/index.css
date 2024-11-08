@@ -24,3 +24,8 @@ code {
   display: flex;
   flex-direction: column;
 }
+
+.section-cont {
+  width: min(90%, 1024px);
+  margin: auto;
+}
