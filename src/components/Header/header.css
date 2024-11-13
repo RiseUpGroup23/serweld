@@ -2,6 +2,12 @@
     position: absolute;
     z-index: 1;
     right: 0;
+    width: 100%;
+    background: transparent;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .appNav ul {
@@ -23,4 +29,19 @@
 
 .appNav ul li:last-child {
     margin-right: 0;
+}
+
+.appHeader.notHome {
+    background: #3F4469;
+}
+
+.imageLogo {
+    height: 30px;
+    margin-left: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .appHeader {
+        width: auto;
+    }
 }

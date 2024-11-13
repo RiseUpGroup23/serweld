@@ -83,7 +83,7 @@
 .cardsContainer {
     display: flex;
     gap: 8rem;
-    margin: 7rem 0;
+    margin: 7rem 0 0;
 }
 
 .blueCard {

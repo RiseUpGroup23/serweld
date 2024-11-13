@@ -1,18 +1,20 @@
 import React from 'react';
-import "./index.css"
+import { Route, Routes } from "react-router-dom"
+import './index.css';
+import Home from './views/Home';
+import AllProyects from './views/AllProyects';
 import Header from './components/Header';
-import Carrousel from './components/Carrousel';
-import InfoSection from './components/InfoSection';
-import CustomersSection from './components/CustomersSection';
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className='appContainer'>
+    <div className="appContainer">
       <Header />
-      <Carrousel />
-      <InfoSection />
-      <CustomersSection />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/proyectos" element={<AllProyects />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
