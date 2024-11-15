@@ -28,6 +28,7 @@ code {
 .appContainer {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .appContainer .section-cont {

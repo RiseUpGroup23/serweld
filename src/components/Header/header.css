@@ -1,3 +1,4 @@
+/* Estilos generales para el Header */
 .appHeader {
     position: absolute;
     z-index: 1;
@@ -40,8 +41,111 @@
     margin-left: 2.5rem;
 }
 
-@media (max-width: 768px) {
+/* Estilos para el botón hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Menú para pantallas pequeñas */
+.appNav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.appNav ul {
+    display: flex;
+}
+
+.appNav ul li {
+    margin-right: 2rem;
+}
+
+.appNav.open ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    background: #3F4469;
+    width: 100%;
+    /* Asegúrate de que el menú ocupe todo el ancho */
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.appNav.open ul li {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
     .appHeader {
-        width: auto;
+        padding: 1rem;
+        z-index: 2;
+        box-sizing: border-box;
+    }
+
+    /* Mostrar el botón hamburguesa */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Ocultar el menú de navegación por defecto */
+    .appNav {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #3F4469;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .appNav.open {
+        display: block;
+    }
+
+    .appNav.open ul {
+        width: 50vw;
+        max-width: 300px;
+        margin: 2.5rem 1rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+        padding: 1rem;
+    }
+
+    /* Ajuste en los elementos del menú cuando esté abierto */
+    .appNav ul {
+        display: block;
+        width: 100%;
+        background-color: #fff !important;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10) !important;
+        padding: 1rem !important;
+        z-index: 2;
+    }
+
+    .appNav ul li {
+        margin: 0 0 1rem 0 !important;
+        font-size: 1rem !important;
+        color: #3F4469 !important;
+    }
+
+    .appNav ul li:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .imageLogo {
+        margin: 0;
     }
 }

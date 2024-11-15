@@ -36,12 +36,19 @@
 .floatInfo {
     position: absolute;
     z-index: 1;
-    inset-area: center;
+    position-area: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin-top: 3rem; /*La suma del gap y el font-size de abajo*/
+    margin-top: 3rem;
+    /*La suma del gap y el font-size de abajo*/
+}
+
+.logoText {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .logoImg {
@@ -49,8 +56,29 @@
     object-fit: contain;
 }
 
-.logoText {
-    color: white;
-    font-size: 2rem;
-    text-align: center;
+@media (max-width: 768px) {
+    .floatInfo {
+        position-area: none;
+        margin-top: 20vh;
+    }
+
+    .slick-arrow {
+        top: 60%;
+    }
+
+    .sliderImg {
+        height: 75vh;
+    }
+
+    .sliderImg img {
+        object-fit: cover;
+    }
+
+    .logoImg {
+        width: min(400px, 90%);
+    }
+
+    .logoText {
+        font-size: 1rem;
+    }
 }

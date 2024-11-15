@@ -146,3 +146,55 @@
     text-align: center;
     line-height: 2rem;
 }
+
+@media (max-width:1024px) {
+    .dataFloatInfo {
+        flex-direction: column;
+        width: 75%;
+        transform: translateY(-25%);
+        gap: 2rem;
+    }
+
+    .dFloatItem:not(:last-child):after {
+        top: 50%;
+        left: 50%;
+        transform: rotate(90deg);
+        height: 100%;
+        margin-top: 1rem;
+        width: 1px;
+    }
+
+    .dFloatItem {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .companyInfoSection,
+    .cardsContainer {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .cardsContainer {
+        gap: 8rem;
+    }
+
+    .companyText,
+    .companyImage,
+    .companyImage img {
+        width: 100%;
+    }
+
+    .blueCard {
+        width: auto;
+    }
+
+    .companyTitle{
+        font-size: 1.5rem;
+    }
+
+    .gridCustomers {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 2rem !important;
+    }
+}
