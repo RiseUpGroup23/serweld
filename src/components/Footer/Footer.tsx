@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./footer.css"
 
 const Footer = () => {
@@ -7,7 +8,9 @@ const Footer = () => {
             <div className="footerElements">
                 <div className="firstColumn">
                     <div className="diff" >
-                        <img src="/logo-azul.png" alt="footerLogo" />
+                        <Link to={"/"} >
+                            <img src="/logo-azul.png" alt="footerLogo" />
+                        </Link>
                     </div>
                     <span>
                         Comprometidos con la innovación, sostenibilidad y excelencia en cada proceso.
@@ -17,7 +20,7 @@ const Footer = () => {
                 <div className="secondColumn">
                     <span className="columnTitle">Contacto</span>
                     <div className="socialCont">
-                        
+
                     </div>
                 </div>
 
@@ -34,7 +37,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <a href="https://www.rise-up.com.ar/" className="devBy">
+            <a href="https://riseup.com.ar/" className="devBy">
                 Diseñado y desarrollado por
                 <img src="https://www.rise-up.com.ar/LogoRiseUp/Logo.png" alt="footerLogo" />
             </a>
