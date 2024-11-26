@@ -1,7 +1,23 @@
 import React from 'react';
 import './infoSection.css';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const InfoSection: React.FC = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash === '#empresa') {
+            const element = document.getElementById('empresa');
+            if (element) {
+            window.scrollTo({
+                top: element.offsetTop - 48, // 3rem = 48px
+                behavior: 'smooth'
+            });
+            }
+        }
+    }, [location]);
+
     return (
         <div className="section-cont">
             <div className="dataFloatInfo">
@@ -33,7 +49,7 @@ const InfoSection: React.FC = () => {
                 </div>
             </div>
 
-            <div className="section-information">
+            <div id='empresa' className="section-information">
                 <span className="companyTitle">
                     LA EMPRESA
                 </span>

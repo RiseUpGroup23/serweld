@@ -1,0 +1,32 @@
+.infoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.infoItemTitle {
+    font-size: 1.5rem;
+    color: #2C3F9B;
+    font-weight: 500;
+}
+
+.infoItemData {
+    font-weight: 500;
+}
+
+.infoItemTitle,
+.infoItemData {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.infoItemTitle svg,
+.infoItemData svg {
+    width: 1.5rem;
+}
+
+.infoItemTitle svg {
+    fill: #2C3F9B;
+}

@@ -52,6 +52,14 @@
     font-size: 2rem;
     font-weight: 700;
     color: #2C3F9B;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.titleSvg{
+    width: 2rem;
+    fill: #2C3F9B;
 }
 
 .companyInfoSection {

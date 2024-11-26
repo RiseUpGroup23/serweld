@@ -7,13 +7,6 @@ const Header: React.FC = () => {
     const [isHome, setIsHome] = useState(location.pathname === '/');
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const scrollToSection = (id: string) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -48,11 +41,15 @@ const Header: React.FC = () => {
                     <li>
                         <Link to={'/'}>Inicio</Link>
                     </li>
-                    <li onClick={() => scrollToSection('empresa')}>La Empresa</li>
+                    <li >
+                        <Link to={'/#empresa'}>La empresa</Link>
+                    </li>
                     <li>
                         <Link to={'/proyectos'}>Proyectos</Link>
                     </li>
-                    <li onClick={() => scrollToSection('contacto')}>Contacto</li>
+                    <li>
+                        <Link to={'/contacto'}>Contacto</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
