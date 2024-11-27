@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from "react-router-dom"
+import { Navigate, Route, Routes } from "react-router-dom"
 import './index.css';
 import Home from './views/Home';
 import AllProyects from './views/AllProyects';
@@ -17,6 +17,7 @@ function App() {
         <Route path="/proyectos" element={<AllProyects />} />
         <Route path="/proyectos/:nombreProyecto" element={<ProyectDetail />} />
         <Route path="/contacto" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </div>

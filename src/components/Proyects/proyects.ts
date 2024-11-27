@@ -2,11 +2,17 @@ const proyects = [
     {
         "proyecto": "TRAMPA DE SCRAPER",
         "detalles": "Caferata 30\"",
+        "descripcion": "Instalación de trampa de Scraper TR81, para empresa TGN.\nOperativo TIE- IN, 30” y 12”.",
         "locacion": "Taco Ralo - Tucumán",
         "cliente": "TGN - Kossai",
         "images": {
             main: "proyects/trampa.png",
-            extras: []
+            extras: [
+                "proyects/trampa/extras/extra1.png",
+                "proyects/trampa/extras/extra2.png",
+                "proyects/trampa/extras/extra3.png",
+                "proyects/trampa/extras/extra4.png"
+            ]
         },
         "link": "/trampa-de-scraper"
     },
@@ -89,11 +95,17 @@ const proyects = [
     {
         "proyecto": "MEDIAS CAÑAS",
         "detalles": "",
+        "descripcion": "Servicio de mano de obra para TGN Construcción y montaje de refuerzo mecánico Tipo A.",
         "locacion": "Tucumán",
         "cliente": "TGN Construcción",
         "images": {
             main: "proyects/mediascanas.png",
-            extras: []
+            extras: [
+                "proyects/mediascanas/extras/extra1.png",
+                "proyects/mediascanas/extras/extra2.png",
+                "proyects/mediascanas/extras/extra3.png",
+                "proyects/mediascanas/extras/extra4.png"
+            ]
         },
         "link": "/medias-canas"
     },

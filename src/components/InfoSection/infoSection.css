@@ -57,7 +57,7 @@
     align-items: flex-start;
 }
 
-.titleSvg{
+.titleSvg {
     width: 2rem;
     fill: #2C3F9B;
 }
@@ -197,8 +197,12 @@
         width: auto;
     }
 
-    .companyTitle{
+    .companyTitle {
         font-size: 1.5rem;
+    }
+
+    .companyText span {
+        width: 100%;
     }
 
     .gridCustomers {

@@ -21,7 +21,7 @@
 .footerElements {
     display: flex;
     justify-content: space-around;
-    width: calc(100% - 10rem);
+    width: 90%;
     gap: 5rem;
 }
 
@@ -84,8 +84,23 @@
     position: relative;
 }
 
-.socialCont svg{
+.secondColumn .socialCont{
+    flex-direction: column;
+}
+
+.socialCont svg {
     width: 2rem;
+    fill: rgba(0, 0, 0, 0.70);
+}
+
+.socialItem svg {
+    width: 1rem;
+}
+
+.socialItem{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 @media (max-width:1024px) {
@@ -98,8 +113,8 @@
     .secondColumn,
     .thirdColumn {
         width: 100%;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
     }
 
     .devBy {

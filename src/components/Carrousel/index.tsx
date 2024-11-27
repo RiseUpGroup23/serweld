@@ -28,7 +28,7 @@ export default function Carrousel() {
                     <img className="sliderImg" src="/slider/fondo2.jpg" alt="Slider2" />
                 </div>
                 <div className="sliderImg">
-                    <img className="sliderImg" src="/slider/fondo3.jpg" alt="Slider3" />
+                    <img className="sliderImg" src="/slider/fondo3.png" alt="Slider3" />
                 </div>
             </Slider>
         </div>
