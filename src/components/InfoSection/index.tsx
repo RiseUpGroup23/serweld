@@ -41,7 +41,7 @@ const InfoSection: React.FC = () => {
 
                 <div className="dFloatItem">
                     <span className="dFloatData">
-                        +10.000
+                        +100.000
                     </span>
                     <span className="dFloatText">
                         pulgadas soldadas

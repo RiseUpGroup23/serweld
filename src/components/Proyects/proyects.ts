@@ -1,10 +1,10 @@
 const proyects = [
     {
         "proyecto": "TRAMPA DE SCRAPER",
-        "detalles": "Caferata 30\"",
+        "detalles": "Cañería 30\"",
         "descripcion": "Instalación de trampa de Scraper TR81, para empresa TGN.\nOperativo TIE- IN, 30” y 12”.",
         "locacion": "Taco Ralo - Tucumán",
-        "cliente": "TGN - Kossai",
+        "cliente": "TGN",
         "images": {
             main: "proyects/trampa.png",
             extras: [
@@ -42,6 +42,9 @@ const proyects = [
                 "proyects/ampliacion/extras/extra4.png",
                 "proyects/ampliacion/extras/extra5.png",
                 "proyects/ampliacion/extras/extra6.png",
+                "proyects/ampliacion/extras/extra7.png",
+                "proyects/ampliacion/extras/extra8.png",
+                "proyects/ampliacion/extras/extra9.png"
             ]
         },
         "link": "/ampliacion-aero-enfriador",
@@ -83,7 +86,7 @@ const proyects = [
                 "paso": 4,
                 "descripcion": [
                     "Tratamiento post-térmico.",
-                    "Detalle del tratamiento."
+                    ""
                 ],
                 "imagen": [
                     "proyects/ampliacion/pasoPaso/post-termico.png",
@@ -95,9 +98,9 @@ const proyects = [
     {
         "proyecto": "MEDIAS CAÑAS",
         "detalles": "",
-        "descripcion": "Servicio de mano de obra para TGN Construcción y montaje de refuerzo mecánico Tipo A.",
+        "descripcion": "Servicio de mano de obra para TGN y montaje de refuerzo mecánico Tipo A.",
         "locacion": "Tucumán",
-        "cliente": "TGN Construcción",
+        "cliente": "TGN",
         "images": {
             main: "proyects/mediascanas.png",
             extras: [
@@ -113,7 +116,7 @@ const proyects = [
         "proyecto": "VÁLVULAS",
         "detalles": "Adecuación de By-Pass de válvula de bloqueo en gasoducto",
         "locacion": "Tucumán",
-        "cliente": "TGN Construcción",
+        "cliente": "TGN",
         "images": {
             main: "proyects/valvulas.png",
             extras: []
@@ -146,7 +149,7 @@ const proyects = [
         "proyecto": "RENOVACIÓN EQUIPO DE CONTROL",
         "detalles": "Renovación de equipo de control de calidad de gas",
         "locacion": "Tucumán",
-        "cliente": "TGN Construcción",
+        "cliente": "TGN",
         "images": {
             main: "proyects/renoveq.png",
             extras: []
@@ -168,7 +171,7 @@ const proyects = [
         "proyecto": "VENTILADOR DE CALDERA",
         "detalles": "",
         "locacion": "Tucumán",
-        "cliente": "Ingeniería Ledes",
+        "cliente": "Ingenio Leales",
         "images": {
             main: "proyects/ventcal.png",
             extras: []
@@ -210,7 +213,7 @@ const proyects = [
     },
     {
         "proyecto": "INTERCAMBIADOR DE CALOR",
-        "detalles": "Fabricación de intercambiador de calor agua-gas 320 bar para CMC",
+        "detalles": "Fabricación de intercambiador de calor agua-gas 320 bar para Comeco",
         "locacion": "",
         "cliente": "",
         "images": {

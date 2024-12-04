@@ -62,8 +62,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="rightContact">
-                    <div className="contactOverlay"></div>
-                    <img src="/slider/fondo1.jpg" alt='contactRight' />
+                    <img src="/proyects/pichanal-contacto.png" alt='contactRight' />
                 </div>
             </div>
         </div>
