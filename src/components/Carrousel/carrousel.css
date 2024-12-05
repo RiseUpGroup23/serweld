@@ -108,6 +108,6 @@
     }
 
     .proyectButton {
-        top: 65%;
+        top: calc(60% - 1rem);
     }
 }
