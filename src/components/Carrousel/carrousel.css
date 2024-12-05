@@ -106,4 +106,14 @@
     .logoText {
         font-size: 1rem;
     }
+
+    .proyectButton {
+        top: 67.5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .proyectButton {
+        display: none;
+    }
 }
