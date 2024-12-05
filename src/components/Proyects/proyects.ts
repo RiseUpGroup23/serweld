@@ -3,7 +3,7 @@ const proyects = [
         "proyecto": "TRAMPA DE SCRAPER",
         "detalles": "Cañería 30\"",
         "descripcion": "Instalación de trampa de Scraper TR81, para empresa TGN.\nOperativo TIE- IN, 30” y 12”.",
-        "locacion": "Taco Ralo - Tucumán",
+        "locacion": "",
         "cliente": "TGN",
         "images": {
             main: "proyects/trampa.png",
@@ -99,7 +99,7 @@ const proyects = [
         "proyecto": "MEDIAS CAÑAS",
         "detalles": "",
         "descripcion": "Servicio de mano de obra para TGN y montaje de refuerzo mecánico Tipo A.",
-        "locacion": "Tucumán",
+        "locacion": "",
         "cliente": "TGN",
         "images": {
             main: "proyects/mediascanas.png",
@@ -115,7 +115,7 @@ const proyects = [
     {
         "proyecto": "VÁLVULAS",
         "detalles": "Adecuación de By-Pass de válvula de bloqueo en gasoducto",
-        "locacion": "Tucumán",
+        "locacion": "",
         "cliente": "TGN",
         "images": {
             main: "proyects/valvulas.png",
@@ -148,7 +148,7 @@ const proyects = [
     {
         "proyecto": "RENOVACIÓN EQUIPO DE CONTROL",
         "detalles": "Renovación de equipo de control de calidad de gas",
-        "locacion": "Tucumán",
+        "locacion": "",
         "cliente": "TGN",
         "images": {
             main: "proyects/renoveq.png",

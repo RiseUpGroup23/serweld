@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import "./carrousel.css"
+import { Link } from "react-router-dom";
 
 export default function Carrousel() {
     var settings = {
@@ -23,12 +24,21 @@ export default function Carrousel() {
                 <div className="sliderImg">
                     <div className="sliderOverlay"></div>
                     <img className="sliderImg" src="/slider/fondo1.jpg" alt="Slider2" />
+                    <Link to={"/proyectos/ampliacion-aero-enfriador"}>
+                        <button className="proyectButton">IR AL PROYECTO</button>
+                    </Link>
                 </div>
                 <div className="sliderImg">
                     <img className="sliderImg" src="/slider/fondo2.jpg" alt="Slider2" />
+                    <Link to={"/proyectos/trampa-de-scraper"}>
+                        <button className="proyectButton">IR AL PROYECTO</button>
+                    </Link>
                 </div>
                 <div className="sliderImg">
                     <img className="sliderImg" src="/slider/fondo3.png" alt="Slider3" />
+                    <Link to={"/proyectos/medias-canas"}>
+                        <button className="proyectButton">IR AL PROYECTO</button>
+                    </Link>
                 </div>
             </Slider>
         </div>
