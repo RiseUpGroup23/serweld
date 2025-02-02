@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom"
 import "./footer.css"
+import WpButton from "./WpButton"
 
 const Footer = () => {
 
     return (
         <footer className="footer">
+            <WpButton />
             <div className="footerElements">
                 <div className="firstColumn">
                     <div className="diff" >
@@ -49,7 +51,7 @@ const Footer = () => {
             </div>
             <a href="https://riseup.com.ar/" className="devBy">
                 Diseñado y desarrollado por
-                <img src="https://www.rise-up.com.ar/LogoRiseUp/Logo.png" alt="footerLogo" />
+                <img src="https://www.riseup.com.ar/LogoRiseUp/Logo.png" alt="footerLogo" />
             </a>
         </footer>
     )
