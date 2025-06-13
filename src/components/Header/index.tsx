@@ -45,7 +45,7 @@ const Header: React.FC = () => {
                         <Link to={'/#empresa'}>La empresa</Link>
                     </li>
                     <li>
-                        <Link to={'/proyectos'}>Proyectos</Link>
+                        <Link to={'/proyectos'}>Servicios</Link>
                     </li>
                     <li>
                         <Link to={'/contacto'}>Contacto</Link>
