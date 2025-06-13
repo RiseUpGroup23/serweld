@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './proyects.css';
 import proyects from './proyects';
 import { Link, useLocation } from 'react-router-dom';
@@ -6,6 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Proyects: React.FC = () => {
     const location = useLocation()
     const seeAll = location.pathname === "/proyectos";
+    const [selectedTab, setSelectedTab] = useState("piping")
 
     return (
         <div className="section-cont">
@@ -14,9 +15,13 @@ const Proyects: React.FC = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" /></svg>
                     Volver
                 </Link>}
-                <span className="companyTitle">{seeAll ? "PROYECTOS Y OBRAS" : "NUESTROS PROYECTOS"}</span>
+                <span className="companyTitle">{seeAll ? "Nuestros servicios" : "NUESTROS PROYECTOS"}</span>
+                <div className="tabSelector">
+                    <button className={`${selectedTab === "piping" ? "selected" : ""}`} onClick={() => setSelectedTab("piping")}>PIPING Y CALDERERIA</button>
+                    <button className={`${selectedTab === "mecanizados" ? "selected" : ""}`} onClick={() => setSelectedTab("mecanizados")}>MECANIZADOS</button>
+                </div>
                 <div className="gridProyectos">
-                    {proyects.slice(0, (seeAll ? proyects.length : 4)).map((proyect, index) => (
+                    {proyects[selectedTab].slice(0, (seeAll ? proyects[selectedTab].length : 4)).map((proyect: any, index: number) => (
                         <Link
                             key={index}
                             to={`/proyectos${proyect.link}`}

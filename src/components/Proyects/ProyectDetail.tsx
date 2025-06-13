@@ -24,7 +24,7 @@ var settings = {
 const ProyectDetail: React.FC = () => {
     const location = useLocation()
     const proyectName = location.pathname.split("/")[2];
-    const proyect = proyects.find(proyect => proyect.link === `/${proyectName}`)
+    const proyect = proyects.piping.find((proyect: any) => proyect.link === `/${proyectName}`) || proyects.mecanizados.find((proyect: any) => proyect.link === `/${proyectName}`)
 
     return (
         <div className='allProyects'>
@@ -51,7 +51,7 @@ const ProyectDetail: React.FC = () => {
                     {proyect?.pasoPaso?.length &&
                         <>
                             <span className="companyTitle">PASO A PASO</span>
-                            {proyect.pasoPaso.map((paso, index) => (
+                            {proyect.pasoPaso.map((paso: any, index: number) => (
                                 <div key={`paso-${index}`} className="stepsContainer">
                                     <div className="stepInfo">
                                         <img src={`../${paso.imagen[0]}`} alt={`paso-img0-${index}`} />
@@ -72,7 +72,7 @@ const ProyectDetail: React.FC = () => {
                             <span className="companyTitle">GALERÍA DE FOTOS</span>
                             <div className="detailSliderCont">
                                 <Slider {...settings}>
-                                    {proyect.images.extras.map((img, index) => (
+                                    {proyect.images.extras.map((img: string, index: number) => (
                                         <div key={`img-${index}`} className="detailSliderImg">
                                             <img className="detailSliderImg" src={`../${img}`} alt={`Slider${index}`} />
                                         </div>

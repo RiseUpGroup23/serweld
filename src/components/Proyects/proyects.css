@@ -142,15 +142,33 @@
     fill: #fff;
 }
 
+.tabSelector {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabSelector button {
+    width: 100%;
+    background-color: transparent;
+    border: 3px solid #6C6C6C;
+    border-width: 0px 0 1px 0;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #6C6C6C;
+}
+
+.tabSelector button.selected {
+    border: 3px solid #2C3F9B;
+    border-width: 0 0 3px 0;
+    color: #2C3F9B;
+}
+
 @media (max-width: 1024px) {
     .gridProyectos {
         grid-template-columns: 1fr !important;
         gap: 2rem !important;
-    }
-
-    .hoverInfo,
-    .proyectImage {
-        height: auto !important;
     }
 
     .proyectTitle {
@@ -163,13 +181,22 @@
         font-size: .875rem;
     }
 
-    .button-swd.back{
-        width: min(40%,200px);
+    .button-swd.back {
+        width: min(40%, 200px);
     }
 }
 
 @media (max-width: 768px) {
     .button-swd {
         width: 100%;
+    }
+
+    .tabSelector button{
+        font-size: .875rem;
+    }
+
+    .hoverInfo,
+    .proyectImage {
+        height: auto !important;
     }
 }
